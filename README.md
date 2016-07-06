@@ -8,7 +8,8 @@
 
 
 
-使用方法
+#####使用方法 
+***
 1、 cocoapods
 ```
   pod 'ZZCoreTextView', '~> 0.0.3'
