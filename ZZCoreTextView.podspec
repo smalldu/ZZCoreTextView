@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.author       = { "smalldu" => "363958265@qq.com" }
   s.platform     = :ios, "8.0"
   s.source       = { :git => "https://github.com/smalldu/ZZCoreTextView.git", :tag => s.version }
+  s.source_files = "ZZCoreTextView/*.{swift,h,m}"
   s.requires_arc = true
   
 end
