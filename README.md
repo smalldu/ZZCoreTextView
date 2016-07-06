@@ -1,8 +1,8 @@
 # ZZCoreTextView
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-green.svg?style=flat)](https://raw.githubusercontent.com/raozhizhen/JMRoundedCorner/master/LICENSE)&nbsp;
-[![CocoaPods]0.0.3 &nbsp;
-[![SUPPORT]iOS 8+&nbsp;
+pod 0.0.3 &nbsp;
+iOS 8+&nbsp;
 
 
 
