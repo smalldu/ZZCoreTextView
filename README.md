@@ -7,7 +7,7 @@ iOS 8+&nbsp;
 
 #####ZZCoreTextView是什么？
 
-`ZZCoreTextView` 是一个集成自`UIView`的视图， 使用`CoreText`技术处理文本中的url链接、电话号码、@某人等。支持样式自定义。看下效果
+`ZZCoreTextView` 是一个继承自`UIView`的处理文本的视图， 使用`CoreText`技术处理文本中的url链接、电话号码、@某人等。支持样式自定义。看下效果
 
 ![效果](https://github.com/smalldu/ZZCoreTextView/blob/master/xgt.gif)
 
