@@ -55,7 +55,7 @@ Pod::Spec.new do |s|
   s.author             = { "smalldu" => "363958265@qq.com" }
   # Or just: s.author    = "smalldu"
   # s.authors            = { "smalldu" => "363958265@qq.com" }
-  # s.social_media_url   = "http://www.jianshu.com/users/d61ef5da631a"
+  s.social_media_url   = "http://www.jianshu.com/users/d61ef5da631a"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -64,7 +64,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  # s.platform     = :ios, "8.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "8.0"
@@ -90,8 +90,8 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,swift,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files  = "ZZCoreTextView", "ZZCoreTextView/*.{h,swift,m}"
+ # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
