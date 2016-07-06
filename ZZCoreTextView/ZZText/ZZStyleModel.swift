@@ -23,7 +23,8 @@ public class ZZStyleModel{
      /// 行间距
     public var lineSpace:CGFloat = 4
     
-    public var urlUnderLine = false
+     /// url是否需要下划线
+    public var urlUnderLine = true
     
      /// 默认为-1 （<0 为不限制行数）
     public var numberOfLines:Int = -1
@@ -42,6 +43,10 @@ public class ZZStyleModel{
     public var numberColor:UIColor = UIColor.blueColor()
     
     public var atSomeOneColor:UIColor = UIColor.blueColor()
+      /// 是否替换url为文本
+    public var urlShouldInstead:Bool = true
+     /// urlShouldInstead 为true时 此值才有用 替换连接的文本
+    public var urlInsteadText = "网页连接"
     
 }
 

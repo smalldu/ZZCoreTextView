@@ -172,9 +172,10 @@ public class ZZCoreTextView: UIView {
                     
                     var keyRect = CGRectZero
                     
-                    if keyAttribute.characters.first == "U"{
+                    if keyAttribute.characters.first == "U" && styleModel.urlShouldInstead{
                         
                         print(keyAttribute)
+                        
                         if !keyDatas.contains(keyAttribute){
                             let img = UIImage(named: "hyperlink.png")
                             keyDatas.append(keyAttribute)
@@ -197,6 +198,10 @@ public class ZZCoreTextView: UIView {
                         
                     }else if keyAttribute.characters.first == "T" ||  keyAttribute.characters.first == "A"{
                         
+                        keyRect = CGRectMake(runPointX, runPointY-(lineHeight+styleModel.highlightBackgroundAdjustHeight-lineSpace)/4-styleModel.highlightBackgroundOffset, runWidth, lineHeight+styleModel.highlightBackgroundAdjustHeight)
+                        self.keyRectArr[NSValue(CGRect:keyRect)] = keyAttribute
+                    }else{
+                        // 不修改文字的 url
                         keyRect = CGRectMake(runPointX, runPointY-(lineHeight+styleModel.highlightBackgroundAdjustHeight-lineSpace)/4-styleModel.highlightBackgroundOffset, runWidth, lineHeight+styleModel.highlightBackgroundAdjustHeight)
                         self.keyRectArr[NSValue(CGRect:keyRect)] = keyAttribute
                     }

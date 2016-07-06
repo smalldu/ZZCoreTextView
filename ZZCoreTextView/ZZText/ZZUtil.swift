@@ -119,12 +119,23 @@ struct ZZUtil {
                 let substringForMatch = muStr.substringWithRange(NSMakeRange(startIndex,matchRange.length))
                 
                 var replaceStr = ""
-                replaceStr = "    网页链接"
+                if !styleModel.urlShouldInstead {
+                    replaceStr = substringForMatch
+                }else{
+                    replaceStr = "    \(styleModel.urlInsteadText)"
+                }
+                
                 attrString.replaceCharactersInRange(NSMakeRange(startIndex, matchRange.length), withString: replaceStr)
 //                print(substringForMatch)
                 let range = NSMakeRange(startIndex, replaceStr.characters.count)
                 
                 attrString.addAttribute(kCTForegroundColorAttributeName as String, value: styleModel.urlColor.CGColor , range: range)
+                
+                if styleModel.urlUnderLine{
+                    
+                    attrString.addAttribute(kCTUnderlineStyleAttributeName as String, value: NSNumber(int: CTUnderlineStyle.Single.rawValue) , range: range)
+                    
+                }
                 
                 let str = String(format: "U%@{%@}", substringForMatch , NSValue(range: range))
                 attrString.addAttribute("keyAttribute", value: str , range: range)
