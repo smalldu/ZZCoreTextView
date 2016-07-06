@@ -140,3 +140,25 @@ let styleModel = ZZStyleModel()
 这个就是最上面效果图的地下部分 。 具体实现可以看代码，代码已经上传github，地址 ： https://github.com/smalldu/ZZCoreTextView
 
 喜欢给个star吧 ！
+
+######2016-7-6更新 
+
+`ZZStyleModel` 中新增属性`urlUnderLine` 是否需要下划线
+
+`urlShouldInstead` 是否替换url为文本 
+`urlInsteadText`  替换连接的文本 只有当 `urlShouldInstead` 为true时 此值才有用
+
+
+![配图](http://upload-images.jianshu.io/upload_images/954071-770db8e0f5bbb84c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+
+![配图](http://upload-images.jianshu.io/upload_images/954071-058572c5b5fbf4e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+![配图](http://upload-images.jianshu.io/upload_images/954071-36474b803f4bfdbb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
+
+
+
