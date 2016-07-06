@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZZCoreTextView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "ZZCoreTextView is a TextView to handle special strings such as url\tel\@someone"
   s.homepage     = "https://github.com/smalldu/ZZCoreTextView.git"
   s.license      = { :type => "MIT", :file => "LICENSE" } 
