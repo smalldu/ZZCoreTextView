@@ -9,20 +9,35 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>ZZCoreTextViewDemo.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>200913D01D23810D001E2CAF</key>
+		<key>2088E97B1D2CEC8D00EA5AD8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>200913E41D23810D001E2CAF</key>
+		<key>2088E9851D2CEC8D00EA5AD8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>200913EF1D23810D001E2CAF</key>
+		<key>2088E9A71D2CECD000EA5AD8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2088E9BA1D2CECD000EA5AD8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2088E9C51D2CECD000EA5AD8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

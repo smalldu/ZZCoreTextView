@@ -1,14 +1,14 @@
 //
-//  ZZCoreTextViewUITests.swift
-//  ZZCoreTextViewUITests
+//  ZZCoreTextViewDemoUITests.swift
+//  ZZCoreTextViewDemoUITests
 //
-//  Created by duzhe on 16/6/29.
+//  Created by duzhe on 16/7/6.
 //  Copyright © 2016年 dz. All rights reserved.
 //
 
 import XCTest
 
-class ZZCoreTextViewUITests: XCTestCase {
+class ZZCoreTextViewDemoUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ZZCoreTextView
+//  ZZCoreTextViewDemo
 //
-//  Created by duzhe on 16/6/29.
+//  Created by duzhe on 16/7/6.
 //  Copyright © 2016年 dz. All rights reserved.
 //
 

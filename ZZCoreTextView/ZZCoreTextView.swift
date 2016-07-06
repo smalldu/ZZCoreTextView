@@ -12,7 +12,7 @@ import UIKit
 public class ZZCoreTextView: UIView {
     
     /// 文本
-    @IBInspectable var text:String = ""{
+    @IBInspectable public var text:String = ""{
         didSet{
             self.setNeedsDisplay()
         }
@@ -31,7 +31,7 @@ public class ZZCoreTextView: UIView {
     
     private var currentRect:[CGRect] = []
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         styleModel = ZZStyleModel()
         super.init(frame: frame)
     }
@@ -177,21 +177,28 @@ public class ZZCoreTextView: UIView {
                         print(keyAttribute)
                         
                         if !keyDatas.contains(keyAttribute){
-                            let img = UIImage(named: "hyperlink.png")
+                            let img = ZZAssets.hyperlinkImage
                             keyDatas.append(keyAttribute)
                             
                             firstRect = CGRectMake(runPointX, runPointY-(lineHeight+styleModel.highlightBackgroundAdjustHeight-lineSpace)/4-styleModel.highlightBackgroundOffset, runWidth, lineHeight+styleModel.highlightBackgroundAdjustHeight)
                             // url
                             
                             prevImgRect = CGRectMake(runPointX+2, lineOrigin.y-((lineHeight - styleModel.tagImgSize.height)/4), styleModel.tagImgSize.width,styleModel.tagImgSize.height)
-                            CGContextDrawImage(contextRef, prevImgRect, img!.CGImage)
+                            CGContextDrawImage(contextRef, prevImgRect, img.CGImage)
                             
                         }else{
+                            let tmpRect = CGRectMake(runPointX, runPointY-(lineHeight+styleModel.highlightBackgroundAdjustHeight-lineSpace)/4-styleModel.highlightBackgroundOffset, runWidth, lineHeight+styleModel.highlightBackgroundAdjustHeight)
                             if firstRect != CGRectZero{
-                                keyRect = CGRectMake(firstRect.origin.x , firstRect.origin.y ,firstRect.width+runWidth,firstRect.height)
+                                if abs(tmpRect.origin.y - firstRect.origin.y) > 5{
+                                    // 如果图片恰好没有到行末尾
+                                    self.keyRectArr[NSValue(CGRect:firstRect)] = keyAttribute
+                                    self.keyRectArr[NSValue(CGRect:tmpRect)] = keyAttribute
+                                }else{
+                                    keyRect = CGRectMake(firstRect.origin.x , firstRect.origin.y ,firstRect.width+runWidth,firstRect.height)
+                                }
                                 firstRect = CGRectZero
                             }else{
-                                keyRect = CGRectMake(runPointX, runPointY-(lineHeight+styleModel.highlightBackgroundAdjustHeight-lineSpace)/4-styleModel.highlightBackgroundOffset, runWidth, lineHeight+styleModel.highlightBackgroundAdjustHeight)
+                                keyRect = tmpRect
                             }
                             self.keyRectArr[NSValue(CGRect:keyRect)] = keyAttribute
                         }
@@ -389,4 +396,20 @@ extension String{
     }
     
 
+}
+
+
+public class ZZAssets: NSObject {
+    
+    public class var hyperlinkImage: UIImage { return ZZAssets.bundledImage(named: "hyperlink") }
+    
+    internal class func bundledImage(named name: String) -> UIImage {
+        let bundle = NSBundle(forClass: ZZAssets.self)
+        let image = UIImage(named: name, inBundle:bundle, compatibleWithTraitCollection:nil)
+        if let image = image {
+            return image
+        }
+        
+        return UIImage()
+    }
 }

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2088E97B1D2CEC8D00EA5AD8"
-               BuildableName = "ZZCoreTextView.framework"
-               BlueprintName = "ZZCoreTextView"
+               BlueprintIdentifier = "2088E9A71D2CECD000EA5AD8"
+               BuildableName = "ZZCoreTextViewDemo.app"
+               BlueprintName = "ZZCoreTextViewDemo"
                ReferencedContainer = "container:ZZCoreTextView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,19 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2088E9851D2CEC8D00EA5AD8"
-               BuildableName = "ZZCoreTextViewTests.xctest"
-               BlueprintName = "ZZCoreTextViewTests"
+               BlueprintIdentifier = "2088E9BA1D2CECD000EA5AD8"
+               BuildableName = "ZZCoreTextViewDemoTests.xctest"
+               BlueprintName = "ZZCoreTextViewDemoTests"
+               ReferencedContainer = "container:ZZCoreTextView.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2088E9C51D2CECD000EA5AD8"
+               BuildableName = "ZZCoreTextViewDemoUITests.xctest"
+               BlueprintName = "ZZCoreTextViewDemoUITests"
                ReferencedContainer = "container:ZZCoreTextView.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +52,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2088E97B1D2CEC8D00EA5AD8"
-            BuildableName = "ZZCoreTextView.framework"
-            BlueprintName = "ZZCoreTextView"
+            BlueprintIdentifier = "2088E9A71D2CECD000EA5AD8"
+            BuildableName = "ZZCoreTextViewDemo.app"
+            BlueprintName = "ZZCoreTextViewDemo"
             ReferencedContainer = "container:ZZCoreTextView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,15 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2088E97B1D2CEC8D00EA5AD8"
-            BuildableName = "ZZCoreTextView.framework"
-            BlueprintName = "ZZCoreTextView"
+            BlueprintIdentifier = "2088E9A71D2CECD000EA5AD8"
+            BuildableName = "ZZCoreTextViewDemo.app"
+            BlueprintName = "ZZCoreTextViewDemo"
             ReferencedContainer = "container:ZZCoreTextView.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -79,15 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2088E97B1D2CEC8D00EA5AD8"
-            BuildableName = "ZZCoreTextView.framework"
-            BlueprintName = "ZZCoreTextView"
+            BlueprintIdentifier = "2088E9A71D2CECD000EA5AD8"
+            BuildableName = "ZZCoreTextViewDemo.app"
+            BlueprintName = "ZZCoreTextViewDemo"
             ReferencedContainer = "container:ZZCoreTextView.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -9,7 +9,8 @@
 import Foundation
 import CoreText
 
-struct ZZUtil {
+public struct ZZUtil {
+    
     
     /**
      创建属性字
@@ -19,7 +20,7 @@ struct ZZUtil {
      
      - returns: 属性字
      */
-    static func createAttributedStringWithText(text:String,styleModel:ZZStyleModel)->NSMutableAttributedString{
+    public static func createAttributedStringWithText(text:String,styleModel:ZZStyleModel)->NSMutableAttributedString{
         
         let font = styleModel.font
         let fontSpace = styleModel.fontSpace
@@ -62,7 +63,7 @@ struct ZZUtil {
      
      - returns: 高度
      */
-    static func getRowHeightWithText(text:String?,rectSize:CGSize,styleModel:ZZStyleModel)->CGFloat{
+    public static func getRowHeightWithText(text:String?,rectSize:CGSize,styleModel:ZZStyleModel)->CGFloat{
         guard let text = text else { fatalError("文字不能为空") }
         // 获得属性字
         let attrString = createAttributedStringWithText(text, styleModel: styleModel)
@@ -97,7 +98,7 @@ struct ZZUtil {
     }
     
     // url
-    static func runsURLWithAttrString(attrString:NSMutableAttributedString,inout regular:[NSRange],styleModel:ZZStyleModel){
+    public static func runsURLWithAttrString(attrString:NSMutableAttributedString,inout regular:[NSRange],styleModel:ZZStyleModel){
         
         let muStr = attrString.mutableString
         let regulaStr = String(format: "<a href='(((http[s]{1}|ftp)://[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%@^&*+?:_/=<>]*)?)|(www.[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%@^&*+?:_/=<>]*)?))'>((?!<\\/a>).)*<\\/a>|(((http[s]{0,1}|ftp)://[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%@^&*+?:_/=<>]*)?)|(www.[a-zA-Z0-9\\.\\-]+\\.([a-zA-Z]{2,4})(:\\d+)?(/[a-zA-Z0-9\\.\\-~!@#$%@^&*+?:_/=<>]*)?))", "%","%","%","%")
@@ -148,7 +149,7 @@ struct ZZUtil {
         }
     }
     
-    static func runsNumberWithAttrString(attrString:NSMutableAttributedString,inout regular:[NSRange],styleModel:ZZStyleModel){
+    public static func runsNumberWithAttrString(attrString:NSMutableAttributedString,inout regular:[NSRange],styleModel:ZZStyleModel){
         let muStr = attrString.mutableString
         let regulaStr = "\\d{3}-\\d{8}|\\d{3}-\\d{7}|\\d{4}-\\d{8}|\\d{4}-\\d{7}|1+[358]+\\d{9}|\\d{8}|\\d{7}"
         
@@ -173,7 +174,7 @@ struct ZZUtil {
     }
 
     
-    static func runsSomeoneWithAttrString(attrString:NSMutableAttributedString,inout regular:[NSRange],styleModel:ZZStyleModel){
+    public static func runsSomeoneWithAttrString(attrString:NSMutableAttributedString,inout regular:[NSRange],styleModel:ZZStyleModel){
     let muStr = attrString.mutableString
     let regulaStr = "@[^\\s@]+?\\s{1}"
     do {

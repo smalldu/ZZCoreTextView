@@ -5,10 +5,11 @@
 //  Created by duzhe on 16/6/29.
 //  Copyright © 2016年 dz. All rights reserved.
 //
-
 import UIKit
 
 public class ZZStyleModel{
+    
+    public init(){}
      /// 文本颜色
     public var textColor:UIColor = UIColor.blackColor()
     
@@ -22,9 +23,6 @@ public class ZZStyleModel{
 
      /// 行间距
     public var lineSpace:CGFloat = 4
-    
-     /// url是否需要下划线
-    public var urlUnderLine = true
     
      /// 默认为-1 （<0 为不限制行数）
     public var numberOfLines:Int = -1
@@ -43,9 +41,12 @@ public class ZZStyleModel{
     public var numberColor:UIColor = UIColor.blueColor()
     
     public var atSomeOneColor:UIColor = UIColor.blueColor()
-      /// 是否替换url为文本
+    
+    /// url是否需要下划线
+    public var urlUnderLine = true
+    /// 是否替换url为文本
     public var urlShouldInstead:Bool = true
-     /// urlShouldInstead 为true时 此值才有用 替换连接的文本
+    /// urlShouldInstead 为true时 此值才有用 替换连接的文本
     public var urlInsteadText = "网页连接"
     
 }
