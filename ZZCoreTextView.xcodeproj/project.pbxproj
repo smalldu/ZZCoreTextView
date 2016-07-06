@@ -12,8 +12,8 @@
 		203EFFBA1D2CFC5000EC5749 /* ZZStyleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EFFB61D2CFC5000EC5749 /* ZZStyleModel.swift */; };
 		203EFFBB1D2CFC5000EC5749 /* ZZTextRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EFFB71D2CFC5000EC5749 /* ZZTextRun.swift */; };
 		203EFFBC1D2CFC5000EC5749 /* ZZUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203EFFB81D2CFC5000EC5749 /* ZZUtil.swift */; };
-		206E25251D2D00DC00E7464F /* ZZCoreTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2088E97C1D2CEC8D00EA5AD8 /* ZZCoreTextView.framework */; };
-		206E25261D2D00DC00E7464F /* ZZCoreTextView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2088E97C1D2CEC8D00EA5AD8 /* ZZCoreTextView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		206E252A1D2D099300E7464F /* ZZCoreTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2088E97C1D2CEC8D00EA5AD8 /* ZZCoreTextView.framework */; };
+		206E252B1D2D099300E7464F /* ZZCoreTextView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2088E97C1D2CEC8D00EA5AD8 /* ZZCoreTextView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2088E9801D2CEC8D00EA5AD8 /* ZZCoreTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2088E97F1D2CEC8D00EA5AD8 /* ZZCoreTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2088E9871D2CEC8D00EA5AD8 /* ZZCoreTextView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2088E97C1D2CEC8D00EA5AD8 /* ZZCoreTextView.framework */; };
 		2088E98C1D2CEC8D00EA5AD8 /* ZZCoreTextViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2088E98B1D2CEC8D00EA5AD8 /* ZZCoreTextViewTests.swift */; };
@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		206E25271D2D00DC00E7464F /* PBXContainerItemProxy */ = {
+		206E252C1D2D099300E7464F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2088E9731D2CEC8D00EA5AD8 /* Project object */;
 			proxyType = 1;
@@ -58,13 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		206E25291D2D00DC00E7464F /* Embed Frameworks */ = {
+		206E252E1D2D099300E7464F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				206E25261D2D00DC00E7464F /* ZZCoreTextView.framework in Embed Frameworks */,
+				206E252B1D2D099300E7464F /* ZZCoreTextView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				206E25251D2D00DC00E7464F /* ZZCoreTextView.framework in Frameworks */,
+				206E252A1D2D099300E7464F /* ZZCoreTextView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,12 +290,12 @@
 				2088E9A41D2CECD000EA5AD8 /* Sources */,
 				2088E9A51D2CECD000EA5AD8 /* Frameworks */,
 				2088E9A61D2CECD000EA5AD8 /* Resources */,
-				206E25291D2D00DC00E7464F /* Embed Frameworks */,
+				206E252E1D2D099300E7464F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				206E25281D2D00DC00E7464F /* PBXTargetDependency */,
+				206E252D1D2D099300E7464F /* PBXTargetDependency */,
 			);
 			name = ZZCoreTextViewDemo;
 			productName = ZZCoreTextViewDemo;
@@ -479,10 +479,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		206E25281D2D00DC00E7464F /* PBXTargetDependency */ = {
+		206E252D1D2D099300E7464F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2088E97B1D2CEC8D00EA5AD8 /* ZZCoreTextView */;
-			targetProxy = 206E25271D2D00DC00E7464F /* PBXContainerItemProxy */;
+			targetProxy = 206E252C1D2D099300E7464F /* PBXContainerItemProxy */;
 		};
 		2088E9891D2CEC8D00EA5AD8 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -623,7 +623,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ZZCoreTextView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = im.zuber.app.qrcode.ZZCoreTextView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -643,7 +643,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = ZZCoreTextView/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = im.zuber.app.qrcode.ZZCoreTextView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

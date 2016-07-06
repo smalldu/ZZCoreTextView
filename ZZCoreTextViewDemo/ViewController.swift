@@ -12,6 +12,7 @@ import ZZCoreTextView
 func scope(@noescape content:(()->())){
     content()
 }
+
 class ViewController: UIViewController {
     
     @IBOutlet weak var zztextView:ZZCoreTextView!
